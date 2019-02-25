@@ -172,15 +172,15 @@ call s:h("SignColumn",    {"fg": s:light_green})
 
 
 if has("gui_running")
-  call s:h("SpellBad",    {"gui": "underline", "sp": s:red})
-  call s:h("SpellCap",    {"gui": "underline", "sp": s:light_green})
+  call s:h("SpellBad",    {"gui": "underline", "sp": s:highlight})
+  call s:h("SpellCap",    {"gui": "underline", "sp": s:light_highlight})
   call s:h("SpellRare",   {"gui": "underline", "sp": s:pink})
-  call s:h("SpellLocal",  {"gui": "underline", "sp": s:dark_green})
+  call s:h("SpellLocal",  {"gui": "underline", "sp": s:dark_highlight})
 else
-  call s:h("SpellBad",    {"cterm": "underline", "fg": s:red})
-  call s:h("SpellCap",    {"cterm": "underline", "fg": s:light_green})
+  call s:h("SpellBad",    {"cterm": "underline", "fg": s:highlight})
+  call s:h("SpellCap",    {"cterm": "underline", "fg": s:light_highlight})
   call s:h("SpellRare",   {"cterm": "underline", "fg": s:pink})
-  call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_green})
+  call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_highlight})
 endif
 
 call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_subtle})
