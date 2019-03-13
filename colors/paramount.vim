@@ -25,7 +25,7 @@ let s:white           = { "gui": "#F1F1F1", "cterm": "15"  }
 let s:actual_white    = { "gui": "#FFFFFF", "cterm": "231" }
 let s:subtle_black    = { "gui": "#303030", "cterm": "236" }
 let s:light_black     = { "gui": "#262626", "cterm": "235" }
-let s:lighter_black   = { "gui": "#4E4E4E", "cterm": "239" }
+let s:lighter_black   = { "gui": "#4E4E4E", "cterm": "241" }
 let s:light_gray      = { "gui": "#A8A8A8", "cterm": "248" }
 let s:lighter_gray    = { "gui": "#C6C6C6", "cterm": "251" }
 let s:lightest_gray   = { "gui": "#EEEEEE", "cterm": "255" }
@@ -177,10 +177,10 @@ if has("gui_running")
   call s:h("SpellRare",   {"gui": "underline", "sp": s:pink})
   call s:h("SpellLocal",  {"gui": "underline", "sp": s:dark_highlight})
 else
-  call s:h("SpellBad",    {"cterm": "underline", "fg": s:highlight})
-  call s:h("SpellCap",    {"cterm": "underline", "fg": s:light_highlight})
-  call s:h("SpellRare",   {"cterm": "underline", "fg": s:pink})
-  call s:h("SpellLocal",  {"cterm": "underline", "fg": s:dark_highlight})
+  call s:h("SpellBad",    {"cterm": "underline"})
+  call s:h("SpellCap",    {"cterm": "underline"})
+  call s:h("SpellRare",   {"cterm": "underline"})
+  call s:h("SpellLocal",  {"cterm": "underline"})
 endif
 
 call s:h("Pmenu",         {"fg": s:norm, "bg": s:bg_subtle})
