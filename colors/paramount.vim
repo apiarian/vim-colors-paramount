@@ -43,9 +43,9 @@ let s:dark_green      = { "gui": "#10A778", "cterm": "2"   }
 let s:light_green     = { "gui": "#5FD7A7", "cterm": "10"  }
 let s:dark_purple     = { "gui": "#af5fd7", "cterm": "134" }
 let s:light_purple    = { "gui": "#a790d5", "cterm": "140" }
-let s:yellow          = { "gui": "#F3E430", "cterm": "11"  }
-let s:light_yellow    = { "gui": "#ffff87", "cterm": "228"   }
-let s:dark_yellow     = { "gui": "#A89C14", "cterm": "3"   }
+let s:yellow          = { "gui": "#F3E430", "cterm": "172"  }
+let s:light_yellow    = { "gui": "#ffff87", "cterm": "178"   }
+let s:dark_yellow     = { "gui": "#A89C14", "cterm": "166"   }
 
 let s:background = &background
 
@@ -158,7 +158,7 @@ call s:h("StatusLine",    {"bg": s:bg_very_subtle})
 call s:h("StatusLineNC",  {"bg": s:bg_very_subtle, "fg": s:medium_gray})
 call s:h("VertSplit",     {"bg": s:bg_very_subtle, "fg": s:bg_very_subtle})
 call s:h("Title",         {"fg": s:dark_blue})
-call s:h("Visual",        {"fg": s:norm, "bg": s:visual})
+call s:h("Visual",        {"fg": s:bg_subtle, "bg": s:visual})
 call s:h("VisualNOS",     {"bg": s:bg_subtle})
 call s:h("WarningMsg",    {"fg": s:yellow})
 call s:h("WildMenu",      {"fg": s:bg, "bg": s:norm})
